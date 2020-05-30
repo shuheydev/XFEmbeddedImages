@@ -10,6 +10,7 @@
 
     <StackLayout>
         <Image Source="{local:ImageResource XFEmbeddedImages.Images.avatar_men_2.jpg}" />
+        <Image Source="{Binding ResourcePath, Converter={local:ImageSourceConverter}}" />
     </StackLayout>
 
 </ContentPage>

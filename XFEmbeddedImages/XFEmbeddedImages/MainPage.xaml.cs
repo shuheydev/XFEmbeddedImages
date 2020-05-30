@@ -13,9 +13,12 @@ namespace XFEmbeddedImages
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public string ResourcePath { get; set; } = "XFEmbeddedImages.Images.avatar_men_2.jpg";
         public MainPage()
         {
             InitializeComponent();
+
+            this.BindingContext = this;
         }
     }
 }
